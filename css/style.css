@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+/* Brand/logo  */
+head {
+  padding: 0 50px;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar-brand img {
+  width: 50%;
+}
+.nav-item {
+  padding-left: 20px;
+}
+
+.nav-click {
+  border-radius: 500px;
+  font-size: 16px;
+  font-weight: 500px;
+  padding: 16px 40px;
+  margin-left: 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid;
+
+  transition: all 0.5s;
+}
+.nav-click:hover {
+  background-color: #fd4766;
+}
+.carousel-caption h3 {
+  font-size: 80px;
+  font-weight: 1000;
+}
+.carousel-item img {
+  width: 100%;
+}
+.carousel-caption p {
+  font-size: 24px;
+}
+.carousel-click {
+  border-radius: 500px;
+  padding: 16px 40px;
+  background-color: transparent;
+  transition: all 0.5s;
+  background-color: #fd4766;
+  color: white;
+  border: 2px solid #fd4766;
+}
+.carousel-click:hover {
+  border: 2px solid #fd4766;
+  color: #fd4766;
+  background-color: transparent;
+}
