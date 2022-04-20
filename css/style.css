@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat Alternates", sans-serif;
 }
-/* Brand/logo  */
+body {
+  font-family: "Poppins", "Sans-serif";
+}
+/* Header  */
 head {
   padding: 0 50px;
-}
-.navbar {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -38,9 +39,18 @@ head {
 .nav-click:hover {
   background-color: #fd4766;
 }
+/* Carousel  */
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
 .carousel-caption h3 {
   font-size: 80px;
   font-weight: 1000;
+}
+.carousel-item {
+  height: 100vh;
 }
 .carousel-item img {
   width: 100%;
@@ -62,3 +72,210 @@ head {
   color: #fd4766;
   background-color: transparent;
 }
+
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+/* Project */
+#project {
+  padding-bottom: 100px;
+}
+
+.text-center {
+  padding: 50px 0 0 0;
+}
+.project__title span {
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.svg__icon {
+}
+#svg {
+  color: #fd4766;
+}
+#svg1 {
+  color: #337dff;
+}
+#svg2 {
+  color: #12d8df;
+}
+#svg3 {
+  color: #59c98d;
+}
+#svg4 {
+  color: #6f41f6;
+}
+#svg5 {
+  color: #357ff6;
+}
+
+.project__title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+.project__title p {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(29, 29, 36, 0.75);
+}
+.card-body {
+  background-color: #f6f6f6;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px #f6f6f6;
+}
+.card-body i {
+  font-size: 43px;
+  color: #fd4766;
+  font-weight: normal;
+}
+.card-body:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.col-4 {
+  padding: 15px;
+}
+/* Portfolio */
+#portfolio {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+.portfolio__title span {
+  background-clip: text;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+.portfolio__title h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+}
+.portfolio__title p {
+  line-height: 30px;
+  font-size: 20px;
+  color: #717173;
+}
+.profolio__item {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.profolio__item img {
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.profolio__text {
+  position: absolute;
+  color: white;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: all 0.5s;
+  display: inline-block;
+  width: 100%;
+}
+.profolio__text p {
+  opacity: 0.7;
+  display: inline-block;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.profolio__text h3 {
+  font-weight: 700;
+  color: white !important;
+}
+.profolio__overplay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  opacity: 0;
+  transition: all 0.4s;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #fd4766 100%);
+}
+.profolio__content {
+  position: absolute;
+}
+.show-on-hover {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: white;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.profolio__item:hover {
+  transform: translateY(-20px);
+}
+.profolio__item:hover .profolio__overplay {
+  opacity: 1;
+}
+.profolio__item:hover img {
+  transform: scale(1.1);
+}
+.profolio__item:hover .show-on-hover {
+  opacity: 1;
+  transform: translateY(-20px);
+  font-size: 18px;
+}
+.profolio__item:hover .profolio__text {
+  transform: translateX(-50%) translateY(-50px);
+}
+
+.profolio__button {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.profolio-click {
+  border-radius: 500px;
+  padding: 16px 40px;
+  background-color: transparent;
+  transition: all 0.5s;
+  background-color: #fd4766;
+  color: white;
+  border: 2px solid #fd4766;
+  text-transform: uppercase;
+}
+.profolio-click:hover {
+  border: 2px solid #fd4766;
+  color: #fd4766;
+  background-color: transparent;
+}
+
