@@ -1,485 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head class="container">
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"
-      integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<head class="container">
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand">
-          <img src="./img/logo.png" />
-        </a>
-        <button class="d-block d-md-none">BUY NOW</button>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css"
+    integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand">
+        <img src="./img/logo.png" />
+      </a>
+      <button class="d-block d-md-none">BUY NOW</button>
 
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blocks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <button type="button" class="nav-click">BUY NOW</button>
-        </div>
-      </nav>
-      <br />
-    </header>
-    <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/bg-image-22.jpg" alt="" />
-          <div class="carousel-caption">
-            <h3>UX Research.</h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but<br />
-              the majority have suffered alteration.
-            </p>
-            <button class="carousel-click" type="button">CONTACT US</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/bg-image-23.jpg" alt="" />
-          <div class="carousel-caption">
-            <h3>UX Research.</h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but<br />
-              the majority have suffered alteration.
-            </p>
-            <button class="carousel-click" type="button">CONTACT US</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/bg-image-24.jpg" alt="" />
-          <div class="carousel-caption">
-            <h3>UX Research.</h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but<br />
-              the majority have suffered alteration.
-            </p>
-            <button class="carousel-click" type="button">CONTACT US</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/bg-image-20.jpg" alt="New York" />
-          <div class="carousel-caption">
-            <h3>UX Research.</h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but<br />
-              the majority have suffered alteration.
-            </p>
-            <button class="carousel-click" type="button">CONTACT US</button>
-          </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blocks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="nav-click">BUY NOW</button>
+      </div>
+    </nav>
+    <br />
+  </header>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/bg-image-22.jpg" alt="" />
+        <div class="carousel-caption">
+          <h3>UX Research.</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available
+            but<br />
+            the majority have suffered alteration.
+          </p>
+          <button class="carousel-click" type="button">CONTACT US</button>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+      <div class="carousel-item">
+        <img src="./img/bg-image-23.jpg" alt="" />
+        <div class="carousel-caption">
+          <h3>UX Research.</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available
+            but<br />
+            the majority have suffered alteration.
+          </p>
+          <button class="carousel-click" type="button">CONTACT US</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/bg-image-24.jpg" alt="" />
+        <div class="carousel-caption">
+          <h3>UX Research.</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available
+            but<br />
+            the majority have suffered alteration.
+          </p>
+          <button class="carousel-click" type="button">CONTACT US</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/bg-image-20.jpg" alt="New York" />
+        <div class="carousel-caption">
+          <h3>UX Research.</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available
+            but<br />
+            the majority have suffered alteration.
+          </p>
+          <button class="carousel-click" type="button">CONTACT US</button>
+        </div>
+      </div>
     </div>
-    <!-- End Carousel -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!-- End Carousel -->
 
-    <!-- Project -->
-    <section id="project">
-      <div class="container">
-        <div class="project__title text-center">
-          <span>What we can do for you</span>
-          <h1>Our Awesome Service</h1>
-          <p>
-            There are many variations of passages of Lorem Ipsum available,<br />
-            but the majority have suffered alteration.
-          </p>
+  <!-- Project -->
+  <section id="project">
+    <div class="container">
+      <div class="project__title text-center">
+        <span>What we can do for you</span>
+        <h1>Our Awesome Service</h1>
+        <p>
+          There are many variations of passages of Lorem Ipsum available,<br />
+          but the majority have suffered alteration.
+        </p>
+      </div>
+      <div class="project__content">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="svg__icon">
+                  <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-cast">
+                    <path
+                      d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6">
+                    </path>
+                    <line x1="2" y1="20" x2="2.01" y2="20"></line>
+                  </svg>
+                </div>
+                <h3 class="card-title">Business Stratagy</h3>
+                <p class="card-text">
+                  I throw myself down among the tall grass by the stream as I
+                  lie close to the earth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-layers">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <h3 class="card-title">Website Development</h3>
+                <p class="card-text">
+                  I throw myself down among the tall grass by the stream as I
+                  lie close to the earth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <h3 class="card-title">Marketing & Reporting</h3>
+                <p class="card-text">
+                  I throw myself down among the tall grass by the stream as I
+                  lie close to the earth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <svg id="svg3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-monitor">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <h3 class="card-title">Mobile App Development</h3>
+                <p class="card-text">
+                  I throw myself down among the tall grass by the stream as I
+                  lie close to the earth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <svg id="svg4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <h3 class="card-title">Marketing & Reporting</h3>
+                <p class="card-text">
+                  I throw myself down among the tall grass by the stream as I
+                  lie close to the earth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-body">
+                <svg id="svg5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-monitor">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <h3 class="card-title">Mobile App Development</h3>
+                <p class="card-text">
+                  I throw myself down among the tall grass by the stream as I
+                  lie close to the earth.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project__content">
-          <div class="row">
-            <div class="col-4">
-              <div class="card">
-                <div class="card-body">
-                  <div class="svg__icon">
-                    <svg
-                      id="svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-cast"
-                    >
-                      <path
-                        d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"
-                      ></path>
-                      <line x1="2" y1="20" x2="2.01" y2="20"></line>
+      </div>
+    </div>
+  </section>
+  <!-- End project -->
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio__title text-center">
+        <span class="text">What we can do for you</span>
+        <h1>Our Project</h1>
+        <p>
+          There are many variations of passages of Lorem Ipsum available,<br />
+          but the majority have suffered alteration.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
+          <div class="profolio__item">
+            <img src="./img/portfolio-4.jpg" class="w-100" alt="" />
+            <div class="profolio__text">
+              <p class="d-block sub-title">Development</p>
+              <h3 class="d-block text-white">Web Design</h3>
+            </div>
+            <p class="show-on-hover d-block">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <div class="profolio__overplay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
+          <div class="profolio__item">
+            <img src="./img/portfolio-5.jpg" class="w-100" alt="" />
+            <div class="profolio__text">
+              <p class="d-block sub-title">Product Design</p>
+              <h3 class="d-block text-white">App Development</h3>
+            </div>
+            <p class="show-on-hover d-block">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <div class="profolio__overplay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
+          <div class="profolio__item">
+            <img src="./img/portfolio-6.jpg" class="w-100" alt="" />
+            <div class="profolio__text">
+              <p class="d-block sub-title">Web Design</p>
+              <h3 class="d-block text-white">Web Design</h3>
+            </div>
+            <p class="show-on-hover d-block">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <div class="profolio__overplay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
+          <div class="profolio__item">
+            <img src="./img/portfolio-7.jpg" class="w-100" alt="" />
+            <div class="profolio__text">
+              <p class="d-block sub-title">Application</p>
+              <h3 class="d-block text-white">Web Application</h3>
+            </div>
+            <p class="show-on-hover d-block">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <div class="profolio__overplay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
+          <div class="profolio__item">
+            <img src="./img/portfolio-8.jpg" class="w-100" alt="" />
+            <div class="profolio__text">
+              <p class="d-block sub-title">Photoshop</p>
+              <h3 class="d-block text-white">Photo Editing</h3>
+            </div>
+            <p class="show-on-hover d-block">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <div class="profolio__overplay"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
+          <div class="profolio__item">
+            <img src="./img/portfolio-9.jpg" class="w-100" alt="" />
+            <div class="profolio__text">
+              <p class="d-block sub-title">Development</p>
+              <h3 class="d-block text-white">Web Design</h3>
+            </div>
+            <p class="show-on-hover d-block">
+              Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
+            </p>
+            <div class="profolio__overplay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profolio__button">
+      <button class="profolio-click" type="button">View Projects</button>
+    </div>
+  </section>
+  <!-- End profolio -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="about__content">
+            <img class="w-100" src="./img/about-3.jpg" alt="About Images" />
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="about__inner">
+            <div class="about__title">
+              <span>Our company about</span>
+              <h2>About</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some
+                form, by injected humour, or randomised words which dont look
+                even slightly believable. If you are going to use a passage of
+                Lorem Ipsum,
+              <h4>Lorem ipsum dolor sit.</h4>
+              </p>
+            </div>
+            <!-- Nav tabs -->
+            <div class="about__tabs">
+              <ul class="nav nav-tabs nav-tabs--item" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#home">Our History</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu1">Our Mission</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu2">Our Vision</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu3">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active about-content">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <ul>
+                  <li>
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"
+                      style="color: #fd4766">
+                      <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                  </div>
-                  <h3 class="card-title">Business Stratagy</h3>
-                  <p class="card-text">
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
+                    <span> The Philosophy Of business analytics</span>
+                  </li>
+                  <li>
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"
+                      style="color: #fd4766">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span> Fast-Track Your business</span>
+                  </li>
+                  <li>
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"
+                      style="color: #fd4766">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span> Lies And Damn Lies About business</span>
+                  </li>
+                  <li>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"
+                      style="color: #fd4766">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span> The Ultimate Deal On business</span>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <div class="card-body">
-                  <svg
-                    id="svg1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-layers"
-                  >
-                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                    <polyline points="2 17 12 22 22 17"></polyline>
-                    <polyline points="2 12 12 17 22 12"></polyline>
-                  </svg>
-                  <h3 class="card-title">Website Development</h3>
-                  <p class="card-text">
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
+              <!-- Tab panes  -->
+              <div id="menu1" class="container tab-pane fade about-text">
+                <p>
+                  John ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae
+                  nesciunt aliquam molestias, optio hic laborum esse. Deserunt
+                  architecto officiis laudantium corporis voluptatem.
+                </p>
+                <p>
+                  Jane ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae
+                  nesciunt aliquam molestias, optio hic laborum esse. Deserunt
+                  architecto officiis laudantium corporis voluptatem.
+                </p>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <div class="card-body">
-                  <svg
-                    id="svg2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-users"
-                  >
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                  </svg>
-                  <h3 class="card-title">Marketing & Reporting</h3>
-                  <p class="card-text">
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
+              <div id="menu2" class="container tab-pane fade about-text">
+                <p>Fatima ipsum dolor sit amet consectetur
+                  adipisicing elit. Neque ab aliquid, atque enim,
+                  vero nobis quam beatae nesciunt aliquam
+                  molestias, optio hic laborum esse. Deserunt
+                  architecto officiis laudantium corporis
+                  voluptatem.</p>
+                <p>Jannin ipsum dolor sit amet consectetur
+                  adipisicing elit. Neque ab aliquid, atque enim,
+                  vero nobis quam beatae nesciunt aliquam
+                  molestias, optio hic laborum esse. Deserunt
+                  architecto officiis laudantium corporis
+                  voluptatem.</p>
               </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <div class="card-body">
-                  <svg
-                    id="svg3"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-monitor"
-                  >
-                    <rect
-                      x="2"
-                      y="3"
-                      width="20"
-                      height="14"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                  </svg>
-                  <h3 class="card-title">Mobile App Development</h3>
-                  <p class="card-text">
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <div class="card-body">
-                  <svg
-                    id="svg4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-users"
-                  >
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                  </svg>
-                  <h3 class="card-title">Marketing & Reporting</h3>
-                  <p class="card-text">
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <div class="card-body">
-                  <svg
-                    id="svg5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-monitor"
-                  >
-                    <rect
-                      x="2"
-                      y="3"
-                      width="20"
-                      height="14"
-                      rx="2"
-                      ry="2"
-                    ></rect>
-                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                  </svg>
-                  <h3 class="card-title">Mobile App Development</h3>
-                  <p class="card-text">
-                    I throw myself down among the tall grass by the stream as I
-                    lie close to the earth.
-                  </p>
-                </div>
+              <div id="menu3" class="container tab-pane fade about-text">
+                <p>
+                  John ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae
+                  nesciunt aliquam molestias, optio hic laborum esse. Deserunt
+                  architecto officiis laudantium corporis voluptatem.
+                </p>
+                <p>
+                  Jane ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae
+                  nesciunt aliquam molestias, optio hic laborum esse. Deserunt
+                  architecto officiis laudantium corporis voluptatem.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End project -->
+    </div>
+  </section>
+  <!-- End about -->
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <div class="container">
-        <div class="portfolio__title text-center">
-          <span class="text">What we can do for you</span>
-          <h1>Our Project</h1>
-          <p>
-            There are many variations of passages of Lorem Ipsum available,<br />
-            but the majority have suffered alteration.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
-            <div class="profolio__item">
-              <img src="./img/portfolio-4.jpg" class="w-100" alt="" />
-              <div class="profolio__text">
-                <p class="d-block sub-title">Development</p>
-                <h3 class="d-block text-white">Web Design</h3>
-              </div>
-              <p class="show-on-hover d-block">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-              </p>
-              <div class="profolio__overplay"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
-            <div class="profolio__item">
-              <img src="./img/portfolio-5.jpg" class="w-100" alt="" />
-              <div class="profolio__text">
-                <p class="d-block sub-title">Product Design</p>
-                <h3 class="d-block text-white">App Development</h3>
-              </div>
-              <p class="show-on-hover d-block">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-              </p>
-              <div class="profolio__overplay"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
-            <div class="profolio__item">
-              <img src="./img/portfolio-6.jpg" class="w-100" alt="" />
-              <div class="profolio__text">
-                <p class="d-block sub-title">Web Design</p>
-                <h3 class="d-block text-white">Web Design</h3>
-              </div>
-              <p class="show-on-hover d-block">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-              </p>
-              <div class="profolio__overplay"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
-            <div class="profolio__item">
-              <img src="./img/portfolio-7.jpg" class="w-100" alt="" />
-              <div class="profolio__text">
-                <p class="d-block sub-title">Application</p>
-                <h3 class="d-block text-white">Web Application</h3>
-              </div>
-              <p class="show-on-hover d-block">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-              </p>
-              <div class="profolio__overplay"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
-            <div class="profolio__item">
-              <img src="./img/portfolio-8.jpg" class="w-100" alt="" />
-              <div class="profolio__text">
-                <p class="d-block sub-title">Photoshop</p>
-                <h3 class="d-block text-white">Photo Editing</h3>
-              </div>
-              <p class="show-on-hover d-block">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-              </p>
-              <div class="profolio__overplay"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center col-md-6 col-sm-6 col-12 pl-2 pr-2">
-            <div class="profolio__item">
-              <img src="./img/portfolio-9.jpg" class="w-100" alt="" />
-              <div class="profolio__text">
-                <p class="d-block sub-title">Development</p>
-                <h3 class="d-block text-white">Web Design</h3>
-              </div>
-              <p class="show-on-hover d-block">
-                Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.
-              </p>
-              <div class="profolio__overplay"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="profolio__button">
-        <button class="profolio-click" type="button">View Projects</button>
-      </div>
-    </section>
-    <!-- End profolio -->
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-            
 
-        </div>
-      </div>
-    </section>
-    <!-- End about -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
