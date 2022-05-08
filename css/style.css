@@ -10,8 +10,8 @@ ul {
   list-style: none;
 }
 /* Header  */
-head {
-  padding: 0 50px;
+header {
+  padding: 0 70px;
 
   position: absolute;
   top: 0;
@@ -29,14 +29,13 @@ head {
 
 .nav-click {
   border-radius: 500px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500px;
   padding: 16px 40px;
   margin-left: 20px;
   background-color: transparent;
   color: white;
   border: 2px solid;
-
   transition: all 0.5s;
 }
 .nav-click:hover {
@@ -103,8 +102,7 @@ head {
   font-weight: bold;
   line-height: 18px;
 }
-.svg__icon {
-}
+
 #svg {
   color: #fd4766;
 }
@@ -318,29 +316,24 @@ head {
 .about__title h4 {
   font-weight: bold;
 }
-.about__tabs ul li a {
-  text-decoration: none;
+
+.about__text {
+  border: 1px solid #e6e6e6;
+  border-radius: 50em;
+}
+.about__text li a {
   color: rgba(29, 29, 36, 0.75);
-}
-.nav-tabs {
-  font-weight: 600;
-}
-.nav-item {
-  padding-left: 0;
+  font-weight: bold;
 }
 
-.nav-tabs .nav-link {
-  border: none;
-}
-
-.nav-tabs .nav-link.active {
+.about__text li a.active {
   font-weight: 600;
   border-radius: 400px;
   padding: 10px 36px;
-  color: white;
-  background-color: #fd4766;
-  cursor: pointer;
+  color: white !important;
+  background-color: #fd4766 !important;
 }
+
 /* About Tab panes  */
 .about-content h4 {
   padding-top: 20px;
@@ -359,4 +352,286 @@ head {
   color: #717173;
   font-size: 18px;
   line-height: 30px;
+}
+
+/* Testimonial */
+#testimonial {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+.inner img {
+  position: absolute;
+  left: -104px;
+  top: -63px;
+}
+ul.testimonial__text {
+  justify-content: center;
+}
+
+.inner p {
+  font-size: 30px;
+  line-height: 48px;
+  color: #18181b;
+  font-weight: 500;
+  margin-top: -16px;
+  z-index: 2;
+  margin-left: -39px;
+  top: -35px;
+  position: sticky;
+}
+.author-info h6 {
+  font-size: 18px;
+  line-height: 50px;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+.author-info span {
+  color: #fd4766;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: -39px;
+}
+ul.testimonial-thumb-wrapper {
+  justify-content: center;
+  max-width: 510px;
+  margin: 0px auto;
+  margin-bottom: -30px;
+}
+.testimonial__text {
+  margin-left: -51px;
+}
+.testimonial__text li {
+  padding: 0;
+}
+
+.thumb {
+  position: relative;
+}
+.thumb::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.thumb img {
+  border-radius: 6px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.thumb img:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+ul.testimonial__text li a.active {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+ul.testimonial__text li a.active .thumb::after {
+  background-color: hsla(0deg, 0%, 100%, 0);
+}
+
+/* Latest */
+#latest {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+.latest__blog_text span {
+  background-clip: text;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+.latest__blog_text h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+.latest__blog_text p {
+  line-height: 30px;
+  font-size: 20px;
+  color: #717173;
+}
+/* _________ */
+
+.thumbnail a img:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 0.8;
+}
+
+.im_box {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.thumbnail a img {
+  display: block;
+}
+.content1 {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ca3c08 100%);
+}
+
+.inner span {
+  color: #ffffff;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+}
+.inner h4 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.inner:hover {
+  bottom: 40%;
+  transition: all 0.3s;
+}
+.content1:hover {
+  bottom: 5%;
+  transition: all 0.3s;
+}
+
+/* Our clients  */
+#Our_Clients {
+  background-color: #f9f9f9;
+  padding: 50px 0 100px 0;
+}
+
+.our_title h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.our_title p {
+  color: gray;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+ul.list-group {
+  display: flex;
+
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+ul.list-group li {
+  margin: 0;
+  flex-basis: 33.33%;
+  padding: 3rem 1rem;
+  background-color: transparent;
+  border: 1px solid #dbdbdb8e;
+  transition: all 0.5s;
+}
+
+ul.list-group li img {
+  opacity: 0.8;
+  transition: 0.3s;
+  max-height: 110px;
+  max-width: 150px;
+}
+
+ul.list-group li:hover {
+  background-color: #fd4766;
+  transform: scale(1.1);
+  border-radius: 10px;
+  z-index: 4;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.enough_btn button {
+  border: 1.5px solid rgba(255, 255, 255, 0.493);
+  padding: 1.5rem 3rem;
+  margin-left: 20rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 1.5rem;
+  transition: all 0.5s;
+}
+
+.enough_btn button:hover {
+  background-color: #fd4766;
+  border: 1.5px solid rgba(255, 255, 255, 0);
+}
+
+hr {
+  border: 1px !important;
+  border-top: 2px solid rgba(255, 255, 255, 0.226) !important;
+}
+
+/* Footer  */
+#footer {
+  padding: 100px 0 50px 0;
+}
+.footer_logo img {
+  width: 40%;
+}
+
+.footer_logo p {
+  color: gray;
+  margin-top: 6rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.footer_menu1 ul.ft_link {
+  list-style: none;
+  position: relative;
+}
+
+.footer_menu1 ul.ft_link li {
+  margin-top: 1rem;
+  font-weight: 300;
+  color: gray;
+  transition: all 0.8s;
+}
+
+.ft_tong .footer_menu1 ul.ft_link li::after {
+  position: absolute;
+  left: 10;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  color: white;
+}
+
+.footer_menu1 ul.ft_link li:hover {
+  color: #fd4766;
+}
+
+.social ul li {
+  list-style: none;
+  padding-right: 2rem;
 }
